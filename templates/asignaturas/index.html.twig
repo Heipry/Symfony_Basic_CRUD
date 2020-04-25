@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Asignaturas index{% endblock %}
+
+{% block body %}
+    <h1>Asignaturas index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Codigo</th>
+                <th>Nombre</th>
+                <th>NombreIngles</th>
+                <th>Credects</th>
+                <th>GradoId</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for asignatura in asignaturas %}
+            <tr>
+                <td>{{ asignatura.id }}</td>
+                <td>{{ asignatura.codigo }}</td>
+                <td>{{ asignatura.nombre }}</td>
+                <td>{{ asignatura.nombreIngles }}</td>
+                <td>{{ asignatura.credects }}</td>
+                <td>{{ asignatura.gradoId }}</td>
+                <td>
+                    <a href="{{ path('asignaturas_show', {'id': asignatura.id}) }}">show</a>
+                    <a href="{{ path('asignaturas_edit', {'id': asignatura.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="7">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('asignaturas_new') }}">Create new</a>
+{% endblock %}

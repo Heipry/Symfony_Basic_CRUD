@@ -1,17 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63ffbaf0-6dd4-4d96-83e0-7bfde8561fc6" name="Default Changelist" comment="" />
+    <list default="true" id="63ffbaf0-6dd4-4d96-83e0-7bfde8561fc6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AlumnosController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Alumnos.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Alumnos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/alumnos/_delete_form.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/alumnos/_form.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/alumnos/edit.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/alumnos/index.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/alumnos/new.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/alumnos/show.html.twig" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -85,9 +98,12 @@
       <path value="$PROJECT_DIR$/vendor/symfony/inflector" />
       <path value="$PROJECT_DIR$/vendor/symfony/security-csrf" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/symfony/web-server-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1akfWYfHLW8lED0N1K3YLQWMDBS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -109,7 +125,8 @@
       <option name="presentableId" value="Default" />
       <updated>1587284545037</updated>
       <workItem from="1587284547641" duration="24000" />
-      <workItem from="1587284573440" duration="656000" />
+      <workItem from="1587284573440" duration="1594000" />
+      <workItem from="1587801071177" duration="5424000" />
     </task>
     <servers />
   </component>
@@ -117,13 +134,21 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="562" y="133" key="#com.intellij.ide.util.MemberChooser" timestamp="1587806186666">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="562" y="133" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1587806186666" />
     <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1587284569076">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1587284569076" />
-    <state x="465" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1587284547856">
+    <state x="604" y="341" key="NewPhpFileDialog" timestamp="1587803109878">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="465" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1587284547856" />
+    <state x="604" y="341" key="NewPhpFileDialog/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1587803109878" />
+    <state x="465" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1587801072172">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="465" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1587801072172" />
   </component>
 </project>

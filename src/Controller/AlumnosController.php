@@ -3,8 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\Alumnos;
-use App\Form\AlumnosType;
-use App\Repository\AlumnosRepository;
+use App\Form\Alumnos1Type;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -18,10 +17,14 @@ class AlumnosController extends AbstractController
     /**
      * @Route("/", name="alumnos_index", methods={"GET"})
      */
-    public function index(AlumnosRepository $alumnosRepository): Response
+    public function index(): Response
     {
+        $alumnos = $this->getDoctrine()
+            ->getRepository(Alumnos::class)
+            ->findAll();
+
         return $this->render('alumnos/index.html.twig', [
-            'alumnos' => $alumnosRepository->findAll(),
+            'alumnos' => $alumnos,
         ]);
     }
 
@@ -31,7 +34,7 @@ class AlumnosController extends AbstractController
     public function new(Request $request): Response
     {
         $alumno = new Alumnos();
-        $form = $this->createForm(AlumnosType::class, $alumno);
+        $form = $this->createForm(Alumnos1Type::class, $alumno);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
@@ -63,7 +66,7 @@ class AlumnosController extends AbstractController
      */
     public function edit(Request $request, Alumnos $alumno): Response
     {
-        $form = $this->createForm(AlumnosType::class, $alumno);
+        $form = $this->createForm(Alumnos1Type::class, $alumno);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {

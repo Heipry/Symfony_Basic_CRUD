@@ -9,8 +9,14 @@
         <thead>
             <tr>
                 <th>Id</th>
+                <th>NExpediente</th>
                 <th>Nombre</th>
-                <th>Created_on</th>
+                <th>Apellidos</th>
+                <th>FechaNacimiento</th>
+                <th>Sexo</th>
+                <th>Email</th>
+                <th>Telefono</th>
+                <th>GradoId</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -18,8 +24,14 @@
         {% for alumno in alumnos %}
             <tr>
                 <td>{{ alumno.id }}</td>
+                <td>{{ alumno.nExpediente }}</td>
                 <td>{{ alumno.nombre }}</td>
-                <td>{{ alumno.createdOn ? alumno.createdOn|date('Y-m-d H:i:s') : '' }}</td>
+                <td>{{ alumno.apellidos }}</td>
+                <td>{{ alumno.fechaNacimiento ? alumno.fechaNacimiento|date('Y-m-d') : '' }}</td>
+                <td>{{ alumno.sexo ? 'Yes' : 'No' }}</td>
+                <td>{{ alumno.email }}</td>
+                <td>{{ alumno.telefono }}</td>
+                <td>{{ alumno.gradoId }}</td>
                 <td>
                     <a href="{{ path('alumnos_show', {'id': alumno.id}) }}">show</a>
                     <a href="{{ path('alumnos_edit', {'id': alumno.id}) }}">edit</a>
@@ -27,7 +39,7 @@
             </tr>
         {% else %}
             <tr>
-                <td colspan="4">no records found</td>
+                <td colspan="10">no records found</td>
             </tr>
         {% endfor %}
         </tbody>
