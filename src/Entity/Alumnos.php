@@ -2,8 +2,6 @@
 
 namespace App\Entity;
 
-use Doctrine\Common\Collections\ArrayCollection;
-use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -78,16 +76,6 @@ class Alumnos
      * @ORM\Column(name="grado_id", type="integer", nullable=true)
      */
     private $gradoId;
-    /**
-     * @ORM\ManyToMany(targetEntity="App\Entity\Asignaturas",
-    inversedBy="alumnos")
-     */
-    private $asignaturas;
-
-    public function __construct()
-    {
-        $this->asignaturas = new ArrayCollection();
-    }
 
     public function getId(): ?int
     {
@@ -186,32 +174,6 @@ class Alumnos
     public function setGradoId(?int $gradoId): self
     {
         $this->gradoId = $gradoId;
-
-        return $this;
-    }
-
-    /**
-     * @return Collection|Asignaturas[]
-     */
-    public function getAsignaturas(): Collection
-    {
-        return $this->asignaturas;
-    }
-
-    public function addAsignatura(Asignaturas $asignatura): self
-    {
-        if (!$this->asignaturas->contains($asignatura)) {
-            $this->asignaturas[] = $asignatura;
-        }
-
-        return $this;
-    }
-
-    public function removeAsignatura(Asignaturas $asignatura): self
-    {
-        if ($this->asignaturas->contains($asignatura)) {
-            $this->asignaturas->removeElement($asignatura);
-        }
 
         return $this;
     }

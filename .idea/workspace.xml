@@ -3,14 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="63ffbaf0-6dd4-4d96-83e0-7bfde8561fc6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AlumnosController.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Alumnos.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Alumnos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/alumnos/_delete_form.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/alumnos/_form.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/alumnos/edit.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/alumnos/index.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/alumnos/new.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/alumnos/show.html.twig" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +119,7 @@
       <updated>1587284545037</updated>
       <workItem from="1587284547641" duration="24000" />
       <workItem from="1587284573440" duration="1594000" />
-      <workItem from="1587801071177" duration="5424000" />
+      <workItem from="1587801071177" duration="8326000" />
     </task>
     <servers />
   </component>
@@ -138,14 +131,18 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="562" y="133" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1587806186666" />
+    <state x="450" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1587808122481">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="450" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1587808122481" />
     <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1587284569076">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1587284569076" />
-    <state x="604" y="341" key="NewPhpFileDialog" timestamp="1587803109878">
+    <state x="604" y="341" key="NewPhpFileDialog" timestamp="1587807244083">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="604" y="341" key="NewPhpFileDialog/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1587803109878" />
+    <state x="604" y="341" key="NewPhpFileDialog/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1587807244083" />
     <state x="465" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1587801072172">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
